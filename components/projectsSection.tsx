@@ -1,97 +1,113 @@
 import React from 'react'
-import { Button } from './ui/button'
+
 import Link from 'next/link'
 
 import Image from "next/image";
-import humanizePic from "../public/humanize-portfolio.png"
+import humanizePic from "../public/humanize-updated-home.png"
+import StocksPic from "../public/stocks-updated.jpg"
+import refugePic from "../public/refugeap-home.jpg"
+import whiteboardPic from "../public/Cloud-app-home.jpg"
 
 export default function ProjectsSection() {
   return (
-    <div>
-        <div className="flex flex-col w-full ">
-            {/* Title */}
-          <div className="text-2xl text-right">
-            Projects
-          </div> 
-          
-          <div className="flex flex-row   pt-4 pb-1 pe-2 space-x-2 border-b-2 border-black">
-            <Button size="sm"  className=" h-7 rounded-2xl">nextjs</Button>
-            <Button size="sm" className=" h-7 rounded-2xl bg-blue-700">React</Button>
-            <Button size="sm" className=" h-7 rounded-2xl bg-purple-700">Tailwind</Button>
-            <Button size="sm" className=" h-7 rounded-2xl bg-green-700">Django</Button>
-            <Button size="sm" className=" h-7 rounded-2xl bg-blue-600">Docker</Button>
-            <Button size="sm" className=" h-7 rounded-2xl bg-blue-600">Kubernetes</Button>
-            <Button size="sm" className=" h-7 rounded-2xl bg-yellow-600">GCP</Button>
 
-          </div>
-          
-          {/* Projects */}
-          <div className="flex flex-col ">
-            {/* Top 2 projects */}
-            <div className="flex flex-row pt-5 h-64">
-              <div className=" w-3/5  ">
-
-                <Link href="/projects">
-                    <div className=" ">
-                    <div className="text-1xl font-bold  text-center text-black">Humanize</div>
-                    <Image
-                        className="border-2 rounded-l-3xl rounded-tr-3xl "
-                        src={humanizePic}
-                        alt="humanize picture"
+      <div className="flex flex-col">
+        <div className="text-white border-b-2 py-2">Projects</div>
+        {/* CARDS */}
+        <div className="flex flex-row space-x-3 py-5 ">
+          {/* CARD */}
+          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border">
+            {/* PIC */}
+            <div className=" bg-inherit ">
+              <div className="rounded-2xl"> 
+                <Link href="https://humanize-text.com/">
+                  <Image
+                    className=" lg:min-w-60 lg:min-h-60 border-1 object-contain rounded-2xl "
+                    src={humanizePic}
+                    alt="pfp picture"
+                    
                     />
-                    </div>
-                </Link>
-
-              </div>
-              <div className=" w-2/5 ">
-                <Link href="/projects">
-                    <div className=" ">
-                    <div className="text-1xl font-bold text-center text-black">Finstimulate</div>
-                    <Image
-                        className="border-2 rounded-tl-3xl rounded-r-3xl "
-                        src={humanizePic}
-                        alt="humanize picture"
-                    />
-    
-                    </div>
                 </Link>
               </div>
+              
             </div>
-            {/* Bottom 2 projects */}
-            <div className="flex flex-row  h-64">
-              <div className="w-2/5   ">
-                
-                <Link href="/projects">
-                    <div className=" ">
-                    <div className="text-1xl font-bold text-center text-black">Refugee Aid</div>
-                    <Image
-                        className="border-2 rounded-l-3xl rounded-br-3xl "
-                        src={humanizePic}
-                        alt="humanize picture"
-                    />
-    
-                    </div>
-                </Link>
+            {/* Project Title */}
+              <div className="bg-inherit text-2xl text-white py-2 ">
+                Humanize
               </div>
-              <div className=" w-3/5 ">
-                <Link href="/projects">
-                    <div className=" ">
-                    <div className="text-1xl font-bold text-center text-black">Private Cloud whiteboard </div>
-                    <Image
-                        className="border-2 rounded-bl-3xl rounded-r-3xl "
-                        src={humanizePic}
-                        alt="humanize picture"
+            
+          </div>
+          {/* CARD */}
+          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border ">
+            {/* PIC */}
+            <div className=" bg-inherit ">
+            <div className=" bg-inherit ">
+              <div className="rounded-2xl">
+                <Link href="https://stocks-prediction-app.pages.dev">
+                  <Image
+                    className=" border-black lg:min-w-60 lg:min-h-60 border object-fill rounded-2xl  "
+                    src={StocksPic}
+                    alt="pfp picture"
+                    
                     />
-    
-                    </div>
-                </Link>
+                </Link>    
               </div>
+              
             </div>
+              
+            </div>
+            {/* Project Title */}
+              <div className="bg-inherit text-2xl text-white py-2 ">
+                Finstimulate
+              </div>
+            
           </div>
-          <div className="text-blue-500 underline flex flex-row justify-end">
-            <Link href="https://github.com/MabroorA"> Explore more projects</Link>
+          {/* CARD */}
+          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border">
+            {/* PIC */}
+            <div className=" bg-inherit ">
+              <div className="rounded-2xl"> 
+                <Link href="https://github.com/MabroorA/refugeEAP-app">
+                  <Image
+                    className="border-black lg:min-w-60 lg:min-h-60 border object-fill rounded-2xl  "
+                    src={refugePic}
+                    alt="pfp picture"
+                    
+                    />
+                </Link>
+              </div>
+              
+            </div>
+            {/* Project Title */}
+              <div className="bg-inherit text-2xl text-white py-2 ">
+                Refugee Aid 
+              </div>
+            
           </div>
+
+          {/* CARD */}
+          {/* CARD */}
+          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border">
+            {/* PIC */}
+            <div className=" bg-inherit ">
+              <div className="rounded-2xl"> 
+                <Image
+                  className="border-black lg:min-w-60 lg:min-h-60 border object-fill rounded-2xl  "
+                  src={whiteboardPic}
+                  alt="pfp picture"
+                  
+                  />
+              </div>
+              
+            </div>
+            {/* Project Title */}
+              <div className="bg-inherit text-2xl text-white py-2 ">
+                Private Cloud
+              </div>
+            
+          </div>
+
         </div>
-    </div>
+      </div>
   )
 }
