@@ -47,8 +47,8 @@ export default function ProjectsSection() {
                   Humanize
                 </div>
                 <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-black' >Nextjs</Button>
-                <Button size="sm" className='bg-blue-400' >Tailwind</Button>
+                <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
+                <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
                 
                 </div>
             </div>
@@ -78,9 +78,9 @@ export default function ProjectsSection() {
                   Finstimulate
                 </div>
                 <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-blue-600' >React</Button>
-                <Button size="sm" className='bg-green-600' >Nodejs</Button>
-                <Button size="sm" className='bg-gray-400' >Flask</Button>
+                <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >React</Button>
+                <Button size="sm" className='bg-green-600 rounded-3xl w-fit h-fit' >Nodejs</Button>
+                <Button size="sm" className='bg-gray-400 rounded-3xl w-fit h-fit' >Flask</Button>
                 
                 </div>
             </div>
@@ -108,8 +108,8 @@ export default function ProjectsSection() {
                   Refugee Aid 
                 </div>
                 <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-blue-600' >React</Button>
-                <Button size="sm" className='bg-green-900' >Django</Button>
+                <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >React</Button>
+                <Button size="sm" className='bg-green-900 rounded-3xl w-fit h-fit' >Django</Button>
                 
                 
                 </div>
@@ -138,9 +138,9 @@ export default function ProjectsSection() {
                   Refugee Aid 
                 </div>
                 <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-blue-600' >Docker</Button>
-                <Button size="sm" className='bg-blue-600' >Kubernetes</Button>
-                <Button size="sm" className='bg-yellow-700' >GCP </Button>
+                <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
+                <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
+                <Button size="sm" className='bg-yellow-700 rounded-3xl w-fit h-fit' >GCP </Button>
                 
                 
                 </div>
