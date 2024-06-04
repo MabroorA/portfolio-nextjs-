@@ -16,12 +16,14 @@ export default function Home() {
         
         <div className="  ">
             <div className="flex flex-row text-5xl font-black text-white space-x-2">
-              <PiHandWavingBold />
+              <div className="animate-bounce">
+                <PiHandWavingBold />
+              </div>
               <div className="text-5xl font-black text-white">
                 Hey, I&apos;m Mabroor
               </div>
             </div>
-            <div className="text-4xl font-black whitespace-nowrap py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500">
+            <div className="text-4xl font-black whitespace-nowrap py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
             A Full stack developer 
             </div>
             <div className="text-3xl text-gray-400">
