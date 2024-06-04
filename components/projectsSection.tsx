@@ -7,6 +7,7 @@ import humanizePic from "../public/humanize-updated-home.png"
 import StocksPic from "../public/stocks-updated.jpg"
 import refugePic from "../public/refugeap-home.jpg"
 import whiteboardPic from "../public/Cloud-app-home.jpg"
+import { Button } from './ui/button';
 
 export default function ProjectsSection() {
   return (
@@ -32,10 +33,16 @@ export default function ProjectsSection() {
               
             </div>
             {/* Project Title */}
-              <div className="bg-inherit text-2xl text-white py-2 ">
-                Humanize
-              </div>
-            
+            <div className='bg-inherit flex flex-col justify-between'>
+                <div className="bg-inherit text-2xl text-white py-2 ">
+                  Humanize
+                </div>
+                <div className=' bg-inherit space-x-1'>
+                <Button size="sm"className='bg-black' >Nextjs</Button>
+                <Button size="sm" className='bg-blue-400' >Tailwind</Button>
+                
+                </div>
+            </div>
           </div>
           {/* CARD */}
           <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border ">
@@ -57,9 +64,17 @@ export default function ProjectsSection() {
               
             </div>
             {/* Project Title */}
-              <div className="bg-inherit text-2xl text-white py-2 ">
-                Finstimulate
-              </div>
+            <div className='bg-inherit flex flex-col justify-between'>
+                <div className="bg-inherit text-2xl text-white py-2 ">
+                  Finstimulate
+                </div>
+                <div className=' bg-inherit space-x-1'>
+                <Button size="sm"className='bg-blue-600' >React</Button>
+                <Button size="sm" className='bg-green-600' >Nodejs</Button>
+                <Button size="sm" className='bg-gray-400' >Flask</Button>
+                
+                </div>
+            </div>
             
           </div>
           {/* CARD */}
@@ -79,9 +94,17 @@ export default function ProjectsSection() {
               
             </div>
             {/* Project Title */}
-              <div className="bg-inherit text-2xl text-white py-2 ">
-                Refugee Aid 
-              </div>
+            <div className='bg-inherit flex flex-col justify-between'>
+                <div className="bg-inherit text-2xl text-white py-2 ">
+                  Refugee Aid 
+                </div>
+                <div className=' bg-inherit space-x-1'>
+                <Button size="sm"className='bg-blue-600' >React</Button>
+                <Button size="sm" className='bg-green-900' >Django</Button>
+                
+                
+                </div>
+            </div>
             
           </div>
 
@@ -101,9 +124,18 @@ export default function ProjectsSection() {
               
             </div>
             {/* Project Title */}
-              <div className="bg-inherit text-2xl text-white py-2 ">
-                Private Cloud
-              </div>
+            <div className='bg-inherit flex flex-col justify-between'>
+                <div className="bg-inherit text-2xl text-white py-2 ">
+                  Refugee Aid 
+                </div>
+                <div className=' bg-inherit space-x-1'>
+                <Button size="sm"className='bg-blue-600' >Docker</Button>
+                <Button size="sm" className='bg-blue-600' >Kubernetes</Button>
+                <Button size="sm" className='bg-yellow-700' >GCP </Button>
+                
+                
+                </div>
+            </div>
             
           </div>
 
