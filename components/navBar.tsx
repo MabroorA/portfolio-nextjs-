@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+
+
 export default function NavBar() {
   return (
     <div>
@@ -8,13 +13,14 @@ export default function NavBar() {
         <div className=" text-3xl">
           Mabroor Ahmed
         </div>
-        <div className="">
-
-          <Link href="" className="px-4">
-          Linkedin
+        <div className="flex flex-row space-x-4">
+          <Link href="https://www.linkedin.com/in/mabroor-dev/" className="flex flex-row items-center space-x-2 px-4">
+            <FaLinkedin />
+            <span>LinkedIn</span>
           </Link>
-          <Link href="" className="px-4">
-            Github
+          <Link href="https://github.com/MabroorA" className="flex flex-row items-center space-x-2 px-4 ">
+            <FaGithub />
+            <span>GitHub</span>
           </Link>
         </div>
       
