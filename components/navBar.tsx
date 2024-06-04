@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <div>
         <nav className="flex flex-row justify-between text-white py-7">
-        <div className=" text-3xl">
+        <div className=" text-1xl">
           Mabroor Ahmed
         </div>
         <div className="flex flex-row space-x-4">

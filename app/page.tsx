@@ -3,6 +3,7 @@
 import Image from "next/image";
 import pfpPic from "../public/linkedin-pfp.jpg"
 import ProjectsSection from "@/components/projectsSection";
+import { PiHandWavingBold } from "react-icons/pi";
 
 
 
@@ -14,8 +15,14 @@ export default function Home() {
       <div className="flex flex-row justify-between  w-full py-10 ">
         
         <div className="  ">
-            <div className="text-5xl font-black whitespace-nowrap py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500">
-            Full stack developer 
+            <div className="flex flex-row text-5xl font-black text-white space-x-2">
+              <PiHandWavingBold />
+              <div className="text-5xl font-black text-white">
+               Hey, I'm Mabroor
+              </div>
+            </div>
+            <div className="text-4xl font-black whitespace-nowrap py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500">
+            A Full stack developer 
             </div>
             <div className="text-3xl text-gray-400">
             I build things sometimes  
