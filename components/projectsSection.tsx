@@ -13,7 +13,12 @@ export default function ProjectsSection() {
   return (
 
       <div className="flex flex-col">
-        <div className="text-white border-b-2 py-2">Projects</div>
+        <div className="relative pb-1 bg-clip-padding">
+          <div className="absolute inset-0 border-b-4 border-transparent bg-gradient-to-r from-teal-300 to-purple-500 rounded-t-md"></div>
+          <div className="relative text-white rounded-t-md py-2">
+            Projects
+          </div>
+        </div>
         {/* CARDS */}
         <div className="flex flex-row space-x-3 py-5 ">
           {/* CARD */}
