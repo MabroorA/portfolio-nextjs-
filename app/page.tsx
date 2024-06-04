@@ -18,7 +18,7 @@ export default function Home() {
             <div className="flex flex-row text-5xl font-black text-white space-x-2">
               <PiHandWavingBold />
               <div className="text-5xl font-black text-white">
-               Hey, I'm Mabroor
+                Hey, I&apos;m Mabroor
               </div>
             </div>
             <div className="text-4xl font-black whitespace-nowrap py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500">
