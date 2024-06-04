@@ -4,7 +4,7 @@ import React from 'react'
 export default function NavBar() {
   return (
     <div>
-        <nav className="flex flex-row justify-between">
+        <nav className="flex flex-row justify-between text-white py-7">
         <div className=" text-3xl">
           Mabroor Ahmed
         </div>
