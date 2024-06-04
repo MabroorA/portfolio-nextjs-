@@ -22,7 +22,11 @@ export default function ProjectsSection() {
         {/* CARDS */}
         <div className="flex flex-row space-x-3 py-5 ">
           {/* CARD */}
-          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border">
+          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border border-2 border-teal-500 animate ">
+            {/* "In Progress" Button */}
+              <Button variant="outline" size="sm" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 text-white rounded-full w-fit h-fit ">
+                In Progress
+              </Button>
             {/* PIC */}
             <div className=" bg-inherit ">
               <div className="rounded-2xl"> 
