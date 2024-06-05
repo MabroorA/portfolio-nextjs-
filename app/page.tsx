@@ -14,7 +14,7 @@ export default function Home() {
       {/* border-2 lg:border-purple-800 md:border-red-800 sm:border-green-800  */}
       <div className="flex flex-col justify-center text-center lg:flex-row lg:justify-between  w-full py-10 ">
         
-        <div className=" flex flex-col justify-center text-center">
+        <div className=" flex flex-col justify-center text-center lg:text-left">
             <div className="flex flex-row justify-center text-4xl lg:text-5xl font-black text-white space-x-2  ">
               <div className="animate-bounce">
                 <PiHandWavingBold />
