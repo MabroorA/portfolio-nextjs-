@@ -55,7 +55,9 @@ export default function ProjectsSection() {
               {/* CARD FOOTER */}
               <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
                   <div className='lg:hidden'>
-                    <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>Visit</Button>
+                    <Link href="https://humanize-text.com/">
+                      <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>Visit</Button>
+                    </Link>
                   </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
@@ -71,7 +73,7 @@ export default function ProjectsSection() {
                     {/* PIC */}
                     <div className=" bg-inherit ">
                       <div className="rounded-2xl"> 
-                        <Link href="https://humanize-text.com/">
+                        <Link href="https://stocks-prediction-app.pages.dev">
                           <Image
                             className=" lg:min-w-60 lg:min-h-60 border-1 object-fill rounded-2xl "
                             src={StocksPic}
@@ -94,7 +96,9 @@ export default function ProjectsSection() {
               {/* CARD FOOTER */}
               <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
                   <div className='lg:hidden'>
-                    <Button size="sm" className='bg-orange-400 rounded-3xl text-black font-bold'>Visit</Button>
+                    <Link href="https://stocks-prediction-app.pages.dev">
+                      <Button size="sm" className='bg-orange-400 rounded-3xl text-black font-bold'>Visit</Button>
+                    </Link>
                   </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
@@ -111,7 +115,7 @@ export default function ProjectsSection() {
                     {/* PIC */}
                     <div className=" bg-inherit ">
                       <div className="rounded-2xl"> 
-                        <Link href="https://humanize-text.com/">
+                        <Link href="https://github.com/MabroorA/refugeEAP-app">
                           <Image
                             className=" lg:min-w-60 lg:min-h-60 border-1 object-fill rounded-2xl "
                             src={refugePic}
@@ -134,7 +138,9 @@ export default function ProjectsSection() {
               {/* CARD FOOTER */}
               <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
                   <div className='lg:hidden'>
-                    <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>github</Button>
+                    <Link href="https://github.com/MabroorA/refugeEAP-app">
+                      <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>github</Button>
+                    </Link>
                   </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
@@ -174,9 +180,11 @@ export default function ProjectsSection() {
               {/* CARD FOOTER */}
               <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
                   <div className='lg:hidden'>
-                    <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>no link(Uni Project)</Button>
+                    <Link href="">
+                      <Button size="sm" variant="destructive" className=' rounded-3xl text-black font-bold '>no link</Button>
+                    </Link>
                   </div>
-                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                  <div className='flex flex-row bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
                       <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
                       <Button size="sm" className='bg-yellow-600 rounded-3xl w-fit h-fit' >GCP</Button>
