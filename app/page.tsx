@@ -1,7 +1,7 @@
 
 
 import Image from "next/image";
-import pfpPic from "../public/linkedin-pfp.jpg"
+import pfpPic from "../public/cropped_pfp.jpeg"
 import ProjectsSection from "@/components/projectsSection";
 import { PiHandWavingBold } from "react-icons/pi";
 
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <Image
-        className="rounded-full w-28 lg:w-52 mx-auto my-2"
+        className="rounded-full w-28 lg:w-52 lg:mx-0 mx-auto my-2"
         src={pfpPic}
         alt="pfp picture"
 
