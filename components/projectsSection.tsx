@@ -59,7 +59,7 @@ export default function ProjectsSection() {
                       <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>Visit</Button>
                     </Link>
                   </div>
-                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                  <div className=' bg-inherit  py-1 rounded-2xl flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0  '>
                       <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
                       <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
                   </div>
@@ -100,7 +100,7 @@ export default function ProjectsSection() {
                       <Button size="sm" className='bg-orange-400 rounded-3xl text-black font-bold'>Visit</Button>
                     </Link>
                   </div>
-                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                  <div className=' bg-inherit  py-1 rounded-2xl flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0   '>
                       <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
                       <Button size="sm" className='bg-green-600 rounded-3xl w-fit h-fit' >NodeJS</Button>
                       <Button size="sm" className='bg-gray-600 rounded-3xl w-fit h-fit' >Flask</Button>
@@ -142,7 +142,7 @@ export default function ProjectsSection() {
                       <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>github</Button>
                     </Link>
                   </div>
-                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                  <div className=' bg-inherit  py-1 rounded-2xl flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0   '>
                       <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
                       <Button size="sm" className='bg-green-900 rounded-3xl w-fit h-fit' >Django</Button>
                   </div>
@@ -184,7 +184,7 @@ export default function ProjectsSection() {
                       <Button size="sm" variant="destructive" className=' rounded-3xl text-black font-bold '>no link</Button>
                     </Link>
                   </div>
-                  <div className='flex flex-row bg-inherit space-x-1 py-1 rounded-2xl '>
+                  <div className='bg-inherit  py-1 rounded-2xl flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0  '>
                       <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
                       <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
                       <Button size="sm" className='bg-yellow-600 rounded-3xl w-fit h-fit' >GCP</Button>
