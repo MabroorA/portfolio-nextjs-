@@ -53,7 +53,10 @@ export default function ProjectsSection() {
                   </div>
               </div>
               {/* CARD FOOTER */}
-              <div className='flex flex-row justify-end rounded-2xl p-2'>
+              <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
+                  <div className='lg:hidden'>
+                    <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>Visit</Button>
+                  </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
                       <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
@@ -89,7 +92,10 @@ export default function ProjectsSection() {
                   </div>
               </div>
               {/* CARD FOOTER */}
-              <div className='flex flex-row justify-end rounded-2xl p-2'>
+              <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
+                  <div className='lg:hidden'>
+                    <Button size="sm" className='bg-orange-400 rounded-3xl text-black font-bold'>Visit</Button>
+                  </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
                       <Button size="sm" className='bg-green-600 rounded-3xl w-fit h-fit' >NodeJS</Button>
@@ -126,7 +132,10 @@ export default function ProjectsSection() {
                   </div>
               </div>
               {/* CARD FOOTER */}
-              <div className='flex flex-row justify-end rounded-2xl p-2'>
+              <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
+                  <div className='lg:hidden'>
+                    <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>github</Button>
+                  </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
                       <Button size="sm" className='bg-green-900 rounded-3xl w-fit h-fit' >Django</Button>
@@ -163,7 +172,10 @@ export default function ProjectsSection() {
                   </div>
               </div>
               {/* CARD FOOTER */}
-              <div className='flex flex-row justify-end rounded-2xl p-2'>
+              <div className='flex flex-row justify-between lg:justify-end rounded-2xl p-2'>
+                  <div className='lg:hidden'>
+                    <Button size="sm" className='bg-teal-500 rounded-3xl text-black font-bold '>no link(Uni Project)</Button>
+                  </div>
                   <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
                       <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
                       <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
