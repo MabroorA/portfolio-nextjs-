@@ -20,132 +20,156 @@ export default function ProjectsSection() {
           </div>
         </div>
         {/* CARDS */}
-        <div className="flex flex-row space-x-3 py-5 ">
-          {/* CARD */}
-          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border border-2 border-teal-500 animate ">
-            {/* "In Progress" Button */}
-              <Button variant="outline" size="sm" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 text-white rounded-full w-fit h-fit ">
-                In Progress
-              </Button>
-            {/* PIC */}
-            <div className=" bg-inherit ">
-              <div className="rounded-2xl"> 
-                <Link href="https://humanize-text.com/">
-                  <Image
-                    className=" lg:min-w-60 lg:min-h-60 border-1 object-contain rounded-2xl "
-                    src={humanizePic}
-                    alt="pfp picture"
-                    
-                    />
-                </Link>
+        <div className="flex flex-row space-x-3 py-5  ">
+          {/* WHOLE CARD */}
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+              <div className='  rounded-3xl'>
+                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl border-2  border-teal-500 hover:border-none">
+                    {/* "In Progress" Button */}
+                      <Button variant="outline" size="sm" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 text-white rounded-full w-fit h-fit ">
+                        In Progress
+                      </Button>
+                    {/* PIC */}
+                    <div className=" bg-inherit ">
+                      <div className="rounded-2xl"> 
+                        <Link href="https://humanize-text.com/">
+                          <Image
+                            className=" lg:min-w-60 lg:min-h-60 border-1 object-contain rounded-2xl "
+                            src={humanizePic}
+                            alt="pfp picture"
+                            
+                            />
+                        </Link>
+                      </div>
+                      
+                    </div>
+                    {/* Project Title */}
+                    <div className='bg-inherit flex flex-col justify-between'>
+                        <div className="bg-inherit text-1xl text-white py-2 ">
+                          Humanize
+                        </div>
+                        
+                    </div>
+                  </div>
               </div>
-              
-            </div>
-            {/* Project Title */}
-            <div className='bg-inherit flex flex-col justify-between'>
-                <div className="bg-inherit text-2xl text-white py-2 ">
-                  Humanize
-                </div>
-                <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
-                <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
-                
-                </div>
-            </div>
+              {/* CARD FOOTER */}
+              <div className='flex flex-row justify-end rounded-2xl p-2'>
+                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                      <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
+                      <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
+                  </div>
+              </div>
           </div>
-          {/* CARD */}
-          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border ">
-            {/* PIC */}
-            <div className=" bg-inherit ">
-            <div className=" bg-inherit ">
-              <div className="rounded-2xl">
-                <Link href="https://stocks-prediction-app.pages.dev">
-                  <Image
-                    className=" border-black lg:min-w-60 lg:min-h-60 border object-fill rounded-2xl  "
-                    src={StocksPic}
-                    alt="pfp picture"
+          {/* WHOLE CARD */}
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+              <div className='  rounded-3xl'>
+                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl  ">
                     
-                    />
-                </Link>    
+                    {/* PIC */}
+                    <div className=" bg-inherit ">
+                      <div className="rounded-2xl"> 
+                        <Link href="https://humanize-text.com/">
+                          <Image
+                            className=" lg:min-w-60 lg:min-h-60 border-1 object-fill rounded-2xl "
+                            src={StocksPic}
+                            alt="pfp picture"
+                            
+                            />
+                        </Link>
+                      </div>
+                      
+                    </div>
+                    {/* Project Title */}
+                    <div className='bg-inherit flex flex-col justify-between'>
+                        <div className="bg-inherit text-1xl text-white py-2 ">
+                          Finstimulate
+                        </div>
+                        
+                    </div>
+                  </div>
               </div>
-              
-            </div>
-              
-            </div>
-            {/* Project Title */}
-            <div className='bg-inherit flex flex-col justify-between'>
-                <div className="bg-inherit text-2xl text-white py-2 ">
-                  Finstimulate
-                </div>
-                <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >React</Button>
-                <Button size="sm" className='bg-green-600 rounded-3xl w-fit h-fit' >Nodejs</Button>
-                <Button size="sm" className='bg-gray-400 rounded-3xl w-fit h-fit' >Flask</Button>
-                
-                </div>
-            </div>
-            
+              {/* CARD FOOTER */}
+              <div className='flex flex-row justify-end rounded-2xl p-2'>
+                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                      <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
+                      <Button size="sm" className='bg-green-600 rounded-3xl w-fit h-fit' >NodeJS</Button>
+                      <Button size="sm" className='bg-gray-600 rounded-3xl w-fit h-fit' >Flask</Button>
+                  </div>
+              </div>
           </div>
-          {/* CARD */}
-          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border">
-            {/* PIC */}
-            <div className=" bg-inherit ">
-              <div className="rounded-2xl"> 
-                <Link href="https://github.com/MabroorA/refugeEAP-app">
-                  <Image
-                    className="border-black lg:min-w-60 lg:min-h-60 border object-fill rounded-2xl  "
-                    src={refugePic}
-                    alt="pfp picture"
+          {/* WHOLE CARD */}
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+              <div className='  rounded-3xl'>
+                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl ">
                     
-                    />
-                </Link>
+                    {/* PIC */}
+                    <div className=" bg-inherit ">
+                      <div className="rounded-2xl"> 
+                        <Link href="https://humanize-text.com/">
+                          <Image
+                            className=" lg:min-w-60 lg:min-h-60 border-1 object-fill rounded-2xl "
+                            src={refugePic}
+                            alt="pfp picture"
+                            
+                            />
+                        </Link>
+                      </div>
+                      
+                    </div>
+                    {/* Project Title */}
+                    <div className='bg-inherit flex flex-col justify-between'>
+                        <div className="bg-inherit text-1xl text-white py-2 ">
+                          Refugee Aid
+                        </div>
+                        
+                    </div>
+                  </div>
               </div>
-              
-            </div>
-            {/* Project Title */}
-            <div className='bg-inherit flex flex-col justify-between'>
-                <div className="bg-inherit text-2xl text-white py-2 ">
-                  Refugee Aid 
-                </div>
-                <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >React</Button>
-                <Button size="sm" className='bg-green-900 rounded-3xl w-fit h-fit' >Django</Button>
-                
-                
-                </div>
-            </div>
-            
+              {/* CARD FOOTER */}
+              <div className='flex flex-row justify-end rounded-2xl p-2'>
+                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                      <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
+                      <Button size="sm" className='bg-green-900 rounded-3xl w-fit h-fit' >Django</Button>
+                  </div>
+              </div>
           </div>
 
-          {/* CARD */}
-          {/* CARD */}
-          <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl transform transition-transform duration-300 hover:scale-110 hover:border-white hover:border">
-            {/* PIC */}
-            <div className=" bg-inherit ">
-              <div className="rounded-2xl"> 
-                <Image
-                  className="border-black lg:min-w-60 lg:min-h-60 border object-fill rounded-2xl  "
-                  src={whiteboardPic}
-                  alt="pfp picture"
-                  
-                  />
+          {/* WHOLE CARD */}
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+              <div className='  rounded-3xl'>
+                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl ">
+                    
+                    {/* PIC */}
+                    <div className=" bg-inherit ">
+                      <div className="rounded-2xl"> 
+                        <Link href="https://humanize-text.com/">
+                          <Image
+                            className=" lg:min-w-60 lg:min-h-60 border-1 object-contain rounded-2xl "
+                            src={whiteboardPic}
+                            alt="pfp picture"
+                            
+                            />
+                        </Link>
+                      </div>
+                      
+                    </div>
+                    {/* Project Title */}
+                    <div className='bg-inherit flex flex-col justify-between'>
+                        <div className="bg-inherit text-1xl text-white py-2 ">
+                          Private Cloud whiteboard
+                        </div>
+                        
+                    </div>
+                  </div>
               </div>
-              
-            </div>
-            {/* Project Title */}
-            <div className='bg-inherit flex flex-col justify-between'>
-                <div className="bg-inherit text-2xl text-white py-2 ">
-                  Refugee Aid 
-                </div>
-                <div className=' bg-inherit space-x-1'>
-                <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
-                <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
-                <Button size="sm" className='bg-yellow-700 rounded-3xl w-fit h-fit' >GCP </Button>
-                
-                
-                </div>
-            </div>
-            
+              {/* CARD FOOTER */}
+              <div className='flex flex-row justify-end rounded-2xl p-2'>
+                  <div className=' bg-inherit space-x-1 py-1 rounded-2xl '>
+                      <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
+                      <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
+                      <Button size="sm" className='bg-yellow-600 rounded-3xl w-fit h-fit' >GCP</Button>
+                  </div>
+              </div>
           </div>
 
         </div>
