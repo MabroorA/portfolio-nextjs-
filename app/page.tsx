@@ -16,23 +16,25 @@ export default function Home() {
         
         <div className=" flex flex-col  text-left lg:text-left">
             <div className="flex flex-row justify-left text-3xl lg:text-5xl font-black text-white space-x-2  ">
-              <div className="animate-bounce">
-                <PiHandWavingBold />
-              </div>
-              <div className="text-3xl lg:text-5xl font-black text-white">
-                Hey, I&apos;m Mabroor
-              </div>
+                <div className="animate-bounce">
+                  <PiHandWavingBold />
+                </div>
+                <div className="text-3xl lg:text-5xl font-black text-white">
+                  Hey, I&apos;m Mabroor
+                </div>
             </div>
-            <div className=" text-3xl lg:text-4xl font-black whitespace-nowrap py-2 lg:py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
-            A Full stack developer 
+            <div>
+                <div className=" text-3xl lg:text-4xl font-black  py-2 lg:py-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
+                A Full stack developer 
+                </div>
             </div>
             <div className=" text-2xl lg:text-3xl text-gray-400 mt-0 lg:mt-5">
-            I build things sometimes  
+              I build things sometimes  
             </div>
         </div>
 
         <Image
-        className="rounded-full w-28 lg:w-52 lg:mx-0 md:mx-auto my-2"
+        className="rounded-full w-28 lg:w-52 lg:mx-0  mt-4"
         src={pfpPic}
         alt="pfp picture"
 
