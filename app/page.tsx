@@ -12,10 +12,10 @@ export default function Home() {
     
     <main className="flex flex-col  lg:py-5 lg:flex-col   ">
       {/* border-2 lg:border-purple-800 md:border-red-800 sm:border-green-800  */}
-      <div className="flex flex-col justify-center  lg:flex-row lg:justify-between  w-full py-10 ">
+      <div className="flex flex-col justify-left  lg:flex-row lg:justify-between  w-full py-10 ">
         
-        <div className=" flex flex-col  text-center lg:text-left">
-            <div className="flex flex-row justify-center text-3xl lg:text-5xl font-black text-white space-x-2  ">
+        <div className=" flex flex-col  text-left lg:text-left">
+            <div className="flex flex-row justify-left text-3xl lg:text-5xl font-black text-white space-x-2  ">
               <div className="animate-bounce">
                 <PiHandWavingBold />
               </div>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <Image
-        className="rounded-full w-28 lg:w-52 lg:mx-0 mx-auto my-2"
+        className="rounded-full w-28 lg:w-52 lg:mx-0 md:mx-auto my-2"
         src={pfpPic}
         alt="pfp picture"
 
