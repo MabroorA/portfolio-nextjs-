@@ -20,11 +20,11 @@ export default function ProjectsSection() {
           </div>
         </div>
         {/* CARDS */}
-        <div className="flex flex-row space-x-3 py-5  ">
+        <div className="flex flex-col lg:flex-row space-x-3 py-5  ">
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+          <div className='flex flex-col rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
               <div className='  rounded-3xl'>
-                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl border-2  border-teal-500 hover:border-none">
+                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl border-2  border-teal-500 lg:hover:border-none">
                     {/* "In Progress" Button */}
                       <Button variant="outline" size="sm" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 text-white rounded-full w-fit h-fit ">
                         In Progress
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
               </div>
           </div>
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
               <div className='  rounded-3xl'>
                   <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl  ">
                     
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
               </div>
           </div>
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
               <div className='  rounded-3xl'>
                   <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl ">
                     
@@ -135,7 +135,7 @@ export default function ProjectsSection() {
           </div>
 
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 hover:scale-105  hover:border-white hover:border-2 '>
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
               <div className='  rounded-3xl'>
                   <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl ">
                     
