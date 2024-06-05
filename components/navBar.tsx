@@ -15,23 +15,21 @@ export default function NavBar() {
   const menu = "{Socials}";
   return (
     <div>
-      <nav className="flex flex-col text-white lg:py-7">
-        <div className="flex flex-row justify-between items-center">
+      <nav className="flex flex-col sm:flex-row justify-between items-center text-white md:py-7 ">
+        <div className="flex justify-between items-center w-full md:w-auto ">
           <div className="text-1xl">
             Mabroor Ahmed
           </div>
           <Button
             size="sm"
-            
-            className='sm:hidden text-teal-400 bg-slate-900 border-2 border-teal-600 hover:bg-inherit  '
+            className='sm:hidden text-teal-400 bg-slate-900 border-2 border-teal-600 hover:bg-inherit'
             onClick={() => setShowMenu(!showMenu)}
           >
-            {/* <CiMenuBurger size={30} className='bg-inherit' /> */}
             {menu}
           </Button>
         </div>
-        <div className={`${showMenu ? 'block' : 'hidden'} sm:flex flex flex-col justify-end sm:flex-row sm:space-x-4 mt-4 `}>
-          <Link href="https://www.linkedin.com/in/mabroor-dev/" className="flex flex-row items-center space-x-1 md:space-x-2 md:px-4 w-fit ">
+        <div className={`${showMenu ? 'block' : 'hidden'} sm:flex  flex-col  sm:flex-row sm:space-x-4 md:mt-0  w-full md:w-auto`}>
+          <Link href="https://www.linkedin.com/in/mabroor-dev/" className="flex flex-row items-center space-x-1 md:space-x-2 md:px-4 w-fit">
             <FaLinkedin />
             <span>LinkedIn</span>
           </Link>
