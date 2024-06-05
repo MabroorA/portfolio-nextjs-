@@ -20,7 +20,7 @@ export default function ProjectsSection() {
           </div>
         </div>
         {/* CARDS */}
-        <div className="flex flex-col lg:flex-row space-x-3 py-5  ">
+        <div className="flex flex-col py-5 space-y-5 lg:flex-row lg:space-y-0 lg:space-x-3    ">
           {/* WHOLE CARD */}
           <div className='flex flex-col rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
               <div className='  rounded-3xl'>
