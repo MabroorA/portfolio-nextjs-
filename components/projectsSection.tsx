@@ -12,9 +12,9 @@ import { Button } from './ui/button';
 export default function ProjectsSection() {
   return (
 
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <div className="relative pb-1 bg-clip-padding">
-          <div className="absolute inset-0 border-b-4 border-transparent bg-gradient-to-r from-teal-300 to-purple-500 rounded-t-md"></div>
+          <div className="absolute inset-0 border-b-0 border-transparent bg-gradient-to-r from-teal-300 to-purple-500 rounded-t-md"></div>
           <div className="relative text-white rounded-t-md py-2">
             Projects
           </div>
