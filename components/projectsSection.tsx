@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from "next/image";
 import humanizePic from "../public/humanize-updated-home.png"
 import StocksPic from "../public/stocks-updated.jpg"
-import refugePic from "../public/refugeap-home.jpg"
+import refugePic from "../public/refugeap-home-resized.jpg"
 import whiteboardPic from "../public/Cloud-app-home.jpg"
 import { Button } from './ui/button';
 
@@ -20,11 +20,11 @@ export default function ProjectsSection() {
           </div>
         </div>
         {/* CARDS */}
-        <div className="flex flex-col py-5 space-y-5 lg:flex-row lg:space-y-0 lg:space-x-3    ">
+        <div className="flex flex-col  py-5 space-y-5 lg:flex-row lg:space-y-0 lg:space-x-3     ">
           {/* WHOLE CARD */}
-          <div className='flex flex-col rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
+          <div className='flex flex-col rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
               <div className='  rounded-3xl'>
-                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl border-2  border-teal-500 lg:hover:border-none">
+                  <div className=" flex flex-col p-3 bg-gray-800 rounded-2xl border-2 border-teal-500 lg:hover:border-none w-full h-full">
                     {/* "In Progress" Button */}
                       <Button variant="outline" size="sm" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 text-white rounded-full w-fit h-fit ">
                         In Progress
@@ -66,9 +66,9 @@ export default function ProjectsSection() {
               </div>
           </div>
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
               <div className='  rounded-3xl'>
-                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl  ">
+                  <div className=" flex flex-col p-3 bg-gray-800 rounded-2xl w-full h-full">
                     
                     {/* PIC */}
                     <div className=" bg-inherit ">
@@ -108,16 +108,16 @@ export default function ProjectsSection() {
               </div>
           </div>
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
               <div className='  rounded-3xl'>
-                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl ">
+                  <div className=" flex flex-col p-3 bg-gray-800 rounded-2xl w-full h-full ">
                     
                     {/* PIC */}
                     <div className=" bg-inherit ">
                       <div className="rounded-2xl"> 
                         <Link href="https://github.com/MabroorA/refugeEAP-app">
                           <Image
-                            className=" lg:min-w-60 lg:min-h-60 border-1 object-fill rounded-2xl "
+                            className=" lg:min-w-60 lg:min-h-60 border-1 object-fill rounded-2xl"
                             src={refugePic}
                             alt="pfp picture"
                             
@@ -150,9 +150,9 @@ export default function ProjectsSection() {
           </div>
 
           {/* WHOLE CARD */}
-          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 '>
+          <div className='flex flex-col  rounded-2xl transform transition-transform duration-300 lg:hover:scale-105  lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
               <div className='  rounded-3xl'>
-                  <div className=" flex flex-col p-3 bg-gray-800 lg:min-w-72 lg:min-h-72 rounded-2xl ">
+                  <div className=" flex flex-col p-3 bg-gray-800 rounded-2xl w-full h-full ">
                     
                     {/* PIC */}
                     <div className=" bg-inherit ">
