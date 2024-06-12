@@ -32,7 +32,7 @@ export default function Home() {
             <div className=" text-2xl md:text-3xl text-gray-400 mt-0  ">
               I build things sometimes  
             </div>
-            <div className=" rounded-lg w-60 pt-4  lg:w-80 lg:pt-12">
+            <div className=" rounded-lg  w-56 pt-4  lg:w-80 lg:pt-12">
               <Image
               className="rounded-lg"
               src={github}
@@ -44,7 +44,7 @@ export default function Home() {
         <div className="flex flex-col  ">
           <div className="pb-2 lg:pb-4">
             <Image
-            className=" rounded-full w-24 mt-5 lg:mt-0 md:w-52 lg:mx-0  "
+            className=" rounded-full w-44 mt-5 lg:mt-0 md:w-52 lg:mx-0  "
             src={pfpPic}
             alt="pfp picture"
             />
