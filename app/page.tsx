@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import pfpPic from "../public/cropped_pfp (1).jpeg"
-import github from "../public/updated-map.png"
+import github from "../public/githubmap-june.png"
 import ProjectsSection from "@/components/projectsSection";
 import { PiHandWavingBold } from "react-icons/pi";
 
@@ -32,7 +32,11 @@ export default function Home() {
             <div className=" text-2xl md:text-3xl text-gray-400 mt-0  ">
               I build things sometimes  
             </div>
-            <div className=" rounded-lg  w-56 pt-4  lg:w-80 lg:pt-12">
+            
+            <div className=" rounded-lg  w-64 pt-4  lg:w-80 lg:pt-12">
+              <div className="text-white">
+                2024
+              </div>
               <Image
               className="rounded-lg"
               src={github}
@@ -44,7 +48,7 @@ export default function Home() {
         <div className="flex flex-col  ">
           <div className="pb-2 lg:pb-4">
             <Image
-            className=" rounded-full w-44 mt-5 lg:mt-0 md:w-52 lg:mx-0  "
+            className=" rounded-full w-40 mt-5 lg:mt-0 md:w-52 lg:mx-0  "
             src={pfpPic}
             alt="pfp picture"
             />
