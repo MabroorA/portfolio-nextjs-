@@ -5,6 +5,8 @@ import pfpPic from "../public/cropped_pfp (1).jpeg"
 import github from "../public/githubmap-june.png"
 import ProjectsSection from "@/components/projectsSection";
 import { PiHandWavingBold } from "react-icons/pi";
+import Meteors from "@/components/magicui/meteors";
+import BoxReveal from "@/components/magicui/box-reveal";
 
 
 
@@ -12,26 +14,35 @@ export default function Home() {
   return (
     
     <main className="flex flex-col  lg:py-5 lg:flex-col   ">
+      <Meteors />
       {/* border-2 lg:border-purple-800 md:border-red-800 sm:border-green-800  */}
       <div className="flex flex-col justify-left  lg:flex-row lg:justify-between  w-full py-10 ">
         
         <div className=" flex flex-col  text-left lg:text-left">
-            <div className="flex flex-col lg:flex-row justify-left text-3xl lg:text-5xl font-black text-white lg:space-x-2  ">
+            <div className="flex flex-col lg:flex-row justify-left text-3xl lg:text-5xl font-black text-white lg:space-x-2">
+             
                 <div className="animate-bounce">
                   <PiHandWavingBold />
                 </div>
+                <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                 <div className="text-3xl lg:text-5xl font-black text-white">
                   Hey, I&apos;m Mabroor
                 </div>
+                </BoxReveal>
+              
             </div>
             <div>
+              <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                 <div className=" text-3xl md:text-4xl font-black  py-1 md:py-5 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
                 A Full stack developer 
                 </div>
+              </BoxReveal>
             </div>
+            <BoxReveal boxColor={"#5046e6"} duration={0.5}>
             <div className=" text-2xl md:text-3xl text-gray-400 mt-0  ">
               I build things sometimes  
             </div>
+            </BoxReveal>
             
             <div className=" rounded-lg  w-64 pt-4  lg:w-80 lg:pt-12">
               <div className="text-white">
