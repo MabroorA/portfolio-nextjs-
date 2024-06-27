@@ -112,12 +112,12 @@ export default function Home() {
             Projects
           </div>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Marquee pauseOnHover>
             <ProjectsSection />
           </Marquee>
         </div>
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <ProjectsSection />
         </div>
 
