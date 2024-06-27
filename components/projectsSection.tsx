@@ -19,9 +19,9 @@ export default function ProjectsSection() {
         {/* CARDS */}
         <div className="flex flex-col py-5 space-y-5 lg:flex-row lg:space-y-0 lg:space-x-3 ">
           {/* IMAGE-EFFECTS CARD */}
-          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl lg:hover:scale-105 lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
+          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96'>
               <div className=' rounded-3xl'>
-                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 border-2 border-teal-500 rounded-2xl lg:hover:border-none">
+                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 border-2 border-teal-500 rounded-2xl ">
                     {/* "In Progress" Button */}
                       <Button variant="outline" size="sm" className="absolute top-0 text-white transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 rounded-full left-1/2 w-fit h-fit ">
                         In Progress
@@ -63,7 +63,7 @@ export default function ProjectsSection() {
               </div>
           </div>
           {/* HUMANIZE CARD */}
-          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl lg:hover:scale-105 lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
+          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
               <div className=' rounded-3xl'>
                   <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl lg:hover:border-none">
                     {/* PIC */}
@@ -102,8 +102,8 @@ export default function ProjectsSection() {
                   </div>
               </div>
           </div>
-          {/* WHOLE CARD */}
-          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl lg:hover:scale-105 lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
+          {/* FINSTIMULATE CARD */}
+          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
               <div className=' rounded-3xl'>
                   <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl">
                     
@@ -144,8 +144,8 @@ export default function ProjectsSection() {
                   </div>
               </div>
           </div>
-          {/* WHOLE CARD */}
-          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl lg:hover:scale-105 lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
+          {/* REFUGEE CARD */}
+          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
               <div className=' rounded-3xl'>
                   <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl">
                     
@@ -186,8 +186,8 @@ export default function ProjectsSection() {
               </div>
           </div>
 
-          {/* WHOLE CARD */}
-          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl lg:hover:scale-105 lg:hover:border-white lg:hover:border-2 md:w-72 md:h-96'>
+          {/* WHITEBOARD CARD */}
+          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
               <div className=' rounded-3xl'>
                   <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl">
                     
