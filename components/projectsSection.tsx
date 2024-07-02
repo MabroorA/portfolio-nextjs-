@@ -29,7 +29,7 @@ export default function ProjectsSection() {
                     {/* PIC */}
                     <div className=" bg-inherit">
                       <div className="rounded-2xl"> 
-                        <Link href="https://github.com/MabroorA/sound-Affects">
+                        <Link href="https://sound-affects.vercel.app">
                           <Image
                             className="object-fill lg:min-w-60 lg:min-h-60 border-1 rounded-2xl"
                             src={imageEffectpic}
@@ -52,8 +52,8 @@ export default function ProjectsSection() {
               {/* CARD FOOTER */}
               <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
                   <div className='lg:hidden'>
-                    <Link href="https://github.com/MabroorA/sound-Affects">
-                      <Button size="sm" className='font-bold text-black bg-teal-500 rounded-3xl '>Visit</Button>
+                    <Link href="https://sound-affects.vercel.app/">
+                      <Button size="sm" className='font-normal text-white bg-teal-500 rounded-3xl'>Visit</Button>
                     </Link>
                   </div>
                   <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
@@ -93,7 +93,7 @@ export default function ProjectsSection() {
               <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
                   <div className='lg:hidden'>
                     <Link href="https://humanize-text.com/">
-                      <Button size="sm" className='font-bold text-black bg-teal-500 rounded-3xl '>Visit</Button>
+                      <Button size="sm" className='font-normal text-white bg-teal-500 rounded-3xl '>Visit</Button>
                     </Link>
                   </div>
                   <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
@@ -134,7 +134,7 @@ export default function ProjectsSection() {
               <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
                   <div className='lg:hidden'>
                     <Link href="https://stocks-prediction-app.pages.dev">
-                      <Button size="sm" className='font-bold text-black bg-orange-400 rounded-3xl'>Visit</Button>
+                      <Button size="sm" className='font-normal text-white bg-orange-400 rounded-3xl'>Visit</Button>
                     </Link>
                   </div>
                   <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
@@ -176,7 +176,7 @@ export default function ProjectsSection() {
               <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
                   <div className='lg:hidden'>
                     <Link href="https://github.com/MabroorA/refugeEAP-app">
-                      <Button size="sm" className='font-bold text-black bg-teal-500 rounded-3xl '>github</Button>
+                      <Button size="sm" className='font-normal text-white bg-teal-500 rounded-3xl '>Github</Button>
                     </Link>
                   </div>
                   <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
@@ -218,7 +218,7 @@ export default function ProjectsSection() {
               <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
                   <div className='lg:hidden'>
                     <Link href="">
-                      <Button size="sm" variant="destructive" className='font-bold text-black rounded-3xl'>no link</Button>
+                      <Button size="sm" variant="destructive" className='font-normal text-white rounded-3xl'>No link</Button>
                     </Link>
                   </div>
                   <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0 '>
