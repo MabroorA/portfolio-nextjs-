@@ -1,127 +1,76 @@
-
-
-import Image from "next/image";
-import pfpPic from "../public/cropped_pfp (1).jpeg"
-import github from "../public/githubmap-june.png"
-import ProjectsSection from "@/components/projectsSection";
 import { PiHandWavingBold } from "react-icons/pi";
-import Meteors from "@/components/magicui/meteors";
+import ProjectsSection from "@/components/projectsSection";
 import BoxReveal from "@/components/magicui/box-reveal";
 import Marquee from "@/components/magicui/marquee";
 
-
-
 export default function Home() {
   return (
-    
-    <main className="flex flex-col lg:py-5 lg:flex-col ">
-      
-      {/* border-2 lg:border-purple-800 md:border-red-800 sm:border-green-800  */}
-      <div className="flex flex-col w-full py-10 justify-left lg:flex-row lg:justify-between ">
-        
-        <div className="flex flex-col text-left lg:text-left">
-            <div className="flex flex-col text-3xl font-black text-white lg:flex-row justify-left lg:text-5xl lg:space-x-2">
-             
-                <div className="animate-bounce">
-                  <PiHandWavingBold />
-                </div>
-                <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <div className="text-3xl font-black text-white lg:text-5xl">
-                  Hey, I&apos;m Mabroor
-                </div>
-                </BoxReveal>
-              
-            </div>
-            <div>
-              <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <div className="py-1 text-3xl font-black text-transparent md:text-4xl md:py-5 bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500">
-                A Full stack developer 
-                </div>
-                </BoxReveal>
-            </div>
-            <div className="mt-0 text-2xl text-gray-400 md:text-3xl">
-              I build things sometimes  
-            </div>
-            
-            <div className="w-64 pt-4 rounded-lg lg:w-80 lg:pt-12">
-              <div className="text-white">
-                2024
-              </div>
-              <Image
-              className="rounded-lg"
-              src={github}
-              alt="pfp picture"
-
-              />
-            </div>
-        </div>
-        <div className="flex flex-col ">
-          <div className="pb-2 lg:pb-4">
-            <Image
-            className="w-40 mt-5 rounded-full lg:mt-0 md:w-52 lg:mx-0"
-            src={pfpPic}
-            alt="pfp picture"
-            />
+    <main className="   py-10">
+      <div className="w-full   ">
+        {/* Header Section */}
+        <header className="mb-10">
+          <div className="flex items-center space-x-3">
+            {/* <div className="animate-bounce text-5xl text-violet-600">
+              <PiHandWavingBold />
+            </div> */}
+            <h1 className="text-5xl font-bold text-gray-900">
+              Hey, I'm Mabroor
+            </h1>
           </div>
-          
-          <div className="text-left text-teal-500 lg:text-center">
-            Past
-          </div>
-          <div className="flex flex-col pt-1 text-left lg:text-center">
-            <div className="flex flex-col">
-              <div className="text-gray-300 ">
-                Web developer intern 
-              </div>
-              <div className="text-gray-700 ">
-                Minibikers
+          <h2 className="mt-2 text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-violet-600">
+            A Full Stack Developer
+          </h2>
+          <p className="mt-4 text-gray-700 text-lg">
+            I build things sometimes. Welcome to my little corner of the web
+            where I share my projects, lessons, and thoughts.
+          </p>
+        </header>
+
+        {/* Main Project Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-5">Building</h2>
+          <div className="border-l-4 border-teal-500 pl-4">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <a
+                href="https://www.sound-effects-ai.com"
+                className="text-xl font-semibold text-gray-900"
+              >
+                Sound-Effects-Ai.com
+              </a>
+              <p className="mt-2 text-gray-600">
+                A detailed description of the main project you're currently
+                working on. Explain its purpose, challenges, and progress.
+              </p>
+              <div className="mt-4">
+                {/* Placeholder for project image */}
+                <div className="w-full h-48  border border-gray-300 rounded-md">
+                  <p className="text-center text-gray-400 mt-20">
+                    Project Image
+                  </p>
                 </div>
-
-            </div>
-            <div className="flex flex-col">
-              <div className="text-gray-500 ">
-              Shopify Developer 
               </div>
-              <div className="text-gray-700 ">
-              Miero
-                </div>
-
+              <a
+                href="#"
+                className="text-teal-500 hover:text-teal-700 mt-4 inline-block"
+              >
+                Learn more →
+              </a>
             </div>
-            <div className="flex flex-col">
-              <div className="text-gray-600 ">
-              Teaching assistant 
-              </div>
-              <div className="text-gray-700 ">
-              University of Leicester
-                </div>
-
-            </div>
-
-            
           </div>
-          
+        </section>
 
-        </div>
-        
-        
-        
-      </div>
-      {/* PROJECTS */}
-      <div className="relative pb-1 bg-clip-padding">
-          <div className="absolute inset-0 border-b-0 border-transparent bg-gradient-to-r from-teal-300 to-purple-500 rounded-t-md"></div>
-          <div className="relative py-2 text-white rounded-t-md">
-            Projects
-          </div>
-        </div>
-        <div className="hidden lg:block">
+        {/* Lessons Section (Marquee) */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-5">
+            Learning by Doing (and Breaking)
+          </h2>
           <Marquee pauseOnHover>
-            <ProjectsSection />
+            <div className="space-x-6">
+              <ProjectsSection />
+            </div>
           </Marquee>
-        </div>
-        <div className="block lg:hidden">
-          <ProjectsSection />
-        </div>
-
-      
+        </section>
+      </div>
     </main>
   );
 }
