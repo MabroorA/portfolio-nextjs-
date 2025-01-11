@@ -12,9 +12,9 @@ export default function NavBar() {
   const menu = "{Socials}";
   return (
     <div>
-      <nav className="flex flex-col sm:flex-row justify-between mx-auto  text-[#183642] font-bold md:py-7  ">
+      <nav className="flex flex-col sm:flex-row justify-between mx-auto  text-[#183642] font-bold py-5 md:py-7 px-2 md:px-0  ">
         <div className="flex justify-between items-center w-full md:w-auto ">
-          <div className="border-2 hover:border-black rounded-full animate-[bounce_5s_infinite]">
+          <div className="border-2 shadow-xl shadow-indigo-400 border-indigo-500 hover:border-black rounded-full animate-[bounce_2.5s_infinite]">
             <img
               src="/favicon.png"
               className="rounded-full w-14 h-14" // Adjust size here
