@@ -1,235 +1,137 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
-import Link from 'next/link'
+import imageEffectpic from "../public/Image-Effects.png";
+import humanizePic from "../public/humanize-updated-home.png";
+import StocksPic from "../public/stocks-updated.jpg";
+import refugePic from "../public/refugeap-home-resized.jpg";
+import whiteboardPic from "../public/Cloud-app-home.jpg";
 
-import Image from "next/image";
-import imageEffectpic from "../public/Image-Effects.png"
-import humanizePic from "../public/humanize-updated-home.png"
-import StocksPic from "../public/stocks-updated.jpg"
-import refugePic from "../public/refugeap-home-resized.jpg"
-import whiteboardPic from "../public/Cloud-app-home.jpg"
+import { Button } from "./ui/button";
+import ProjectCard from "./ProjectCard";
 
-import { Button } from './ui/button';
+interface CardFooterProps {
+  link: string;
+  tags: string[];
+  color?: string;
+  isBroken?: boolean;
+}
 
-export default function ProjectsSection() {
+const CardFooter: React.FC<CardFooterProps> = ({
+  link,
+  tags,
+  color = "teal-500",
+  isBroken = false,
+}) => {
+  const displayLabel = isBroken
+    ? "No link"
+    : link.includes("github")
+    ? "Github"
+    : "Visit";
+
   return (
+    <div className="flex flex-row justify-between p-2 lg:justify-end rounded-2xl">
+      <div className="lg:hidden">
+        <Link href={link || "#"}>
+          <Button
+            size="sm"
+            className={`font-normal text-black ${
+              isBroken ? "bg-red-400" : `bg-${color}`
+            } rounded-3xl`}
+          >
+            {displayLabel}
+          </Button>
+        </Link>
+      </div>
+      <div className="flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0">
+        {tags.map((tag, index) => (
+          <Button
+            key={index}
+            size="sm"
+            className="bg-black rounded-3xl w-fit h-fit"
+          >
+            {tag}
+          </Button>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-      <div className="flex flex-col ">
-        
-        {/* CARDS */}
-        <div className="flex flex-col py-5 space-y-5 lg:flex-row lg:space-y-0 lg:space-x-3 ">
-          {/* IMAGE-EFFECTS CARD */}
-          <div className='flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96'>
-              <div className=' rounded-3xl'>
-                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 border-2 border-teal-500 rounded-2xl ">
-                    {/* "In Progress" Button */}
-                      <Button variant="outline" size="sm" className="absolute top-0 text-white transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 rounded-full left-1/2 w-fit h-fit ">
-                        In Progress
-                      </Button>
-                    {/* PIC */}
-                    <div className=" bg-inherit">
-                      <div className="rounded-2xl"> 
-                        <Link href="https://sound-affects.vercel.app">
-                          <Image
-                            className="object-fill lg:min-w-60 lg:min-h-60 border-1 rounded-2xl"
-                            src={imageEffectpic}
-                            alt="pfp picture"
-                            
-                            />
-                        </Link>
-                      </div>
-                      
-                    </div>
-                    {/* Project Title */}
-                    <div className='flex flex-col justify-between bg-inherit'>
-                        <div className="py-2 text-white bg-inherit text-1xl ">
-                          Image to Sound Affects
-                        </div>
-                        
-                    </div>
-                  </div>
-              </div>
-              {/* CARD FOOTER */}
-              <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
-                  <div className='lg:hidden'>
-                    <Link href="https://sound-affects.vercel.app/">
-                      <Button size="sm" className='font-normal text-white bg-teal-500 rounded-3xl'>Visit</Button>
-                    </Link>
-                  </div>
-                  <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
-                      <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
-                      <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
-                  </div>
-              </div>
-          </div>
-          {/* HUMANIZE CARD */}
-          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
-              <div className=' rounded-3xl'>
-                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl lg:hover:border-none">
-                    {/* PIC */}
-                    <div className=" bg-inherit">
-                      <div className="rounded-2xl"> 
-                        <Link href="https://humanize-text.com/">
-                          <Image
-                            className="object-contain lg:min-w-60 lg:min-h-60 border-1 rounded-2xl"
-                            src={humanizePic}
-                            alt="pfp picture"
-                            
-                            />
-                        </Link>
-                      </div>
-                      
-                    </div>
-                    {/* Project Title */}
-                    <div className='flex flex-col justify-between bg-inherit'>
-                        <div className="py-2 text-white bg-inherit text-1xl ">
-                          Humanize
-                        </div>
-                        
-                    </div>
-                  </div>
-              </div>
-              {/* CARD FOOTER */}
-              <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
-                  <div className='lg:hidden'>
-                    <Link href="https://humanize-text.com/">
-                      <Button size="sm" className='font-normal text-white bg-teal-500 rounded-3xl '>Visit</Button>
-                    </Link>
-                  </div>
-                  <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
-                      <Button size="sm"className='bg-black rounded-3xl w-fit h-fit' >Nextjs</Button>
-                      <Button size="sm" className='bg-blue-400 rounded-3xl w-fit h-fit' >Tailwind</Button>
-                  </div>
-              </div>
-          </div>
-          {/* FINSTIMULATE CARD */}
-          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
-              <div className=' rounded-3xl'>
-                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl">
-                    
-                    {/* PIC */}
-                    <div className=" bg-inherit">
-                      <div className="rounded-2xl"> 
-                        <Link href="https://stocks-prediction-app.pages.dev">
-                          <Image
-                            className="object-fill lg:min-w-60 lg:min-h-60 border-1 rounded-2xl"
-                            src={StocksPic}
-                            alt="pfp picture"
-                            
-                            />
-                        </Link>
-                      </div>
-                      
-                    </div>
-                    {/* Project Title */}
-                    <div className='flex flex-col justify-between bg-inherit'>
-                        <div className="py-2 text-white bg-inherit text-1xl ">
-                          Finstimulate
-                        </div>
-                        
-                    </div>
-                  </div>
-              </div>
-              {/* CARD FOOTER */}
-              <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
-                  <div className='lg:hidden'>
-                    <Link href="https://stocks-prediction-app.pages.dev">
-                      <Button size="sm" className='font-normal text-white bg-orange-400 rounded-3xl'>Visit</Button>
-                    </Link>
-                  </div>
-                  <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
-                      <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
-                      <Button size="sm" className='bg-green-600 rounded-3xl w-fit h-fit' >NodeJS</Button>
-                      <Button size="sm" className='bg-gray-600 rounded-3xl w-fit h-fit' >Flask</Button>
-                  </div>
-              </div>
-          </div>
-          {/* REFUGEE CARD */}
-          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
-              <div className=' rounded-3xl'>
-                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl">
-                    
-                    {/* PIC */}
-                    <div className=" bg-inherit">
-                      <div className="rounded-2xl"> 
-                        <Link href="https://github.com/MabroorA/refugeEAP-app">
-                          <Image
-                            className="object-fill lg:min-w-60 lg:min-h-60 border-1 rounded-2xl"
-                            src={refugePic}
-                            alt="pfp picture"
-                            
-                            />
-                        </Link>
-                      </div>
-                      
-                    </div>
-                    {/* Project Title */}
-                    <div className='flex flex-col justify-between bg-inherit'>
-                        <div className="py-2 text-white bg-inherit text-1xl ">
-                          Refugee Aid
-                        </div>
-                        
-                    </div>
-                  </div>
-              </div>
-              {/* CARD FOOTER */}
-              <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
-                  <div className='lg:hidden'>
-                    <Link href="https://github.com/MabroorA/refugeEAP-app">
-                      <Button size="sm" className='font-normal text-white bg-teal-500 rounded-3xl '>Github</Button>
-                    </Link>
-                  </div>
-                  <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0'>
-                      <Button size="sm"className='bg-blue-500 rounded-3xl w-fit h-fit' >React</Button>
-                      <Button size="sm" className='bg-green-900 rounded-3xl w-fit h-fit' >Django</Button>
-                  </div>
-              </div>
-          </div>
+const ProjectsSection: React.FC = () => {
+  return (
+    <div className="flex flex-col">
+      <div className="flex flex-col py-5 space-y-5 lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-5">
+        {/* IMAGE TO SOUND */}
+        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
+          <ProjectCard
+            title="Image to Sound Effects"
+            description="AI-Generated Unique Sound Effects. Create instead of extracting from videos."
+            link="https://www.sound-effects-ai.com"
+            imageSrc={imageEffectpic}
+          />
+          <CardFooter
+            link="https://sound-affects.vercel.app/"
+            tags={["Nextjs", "Tailwind"]}
+          />
+        </div>
 
-          {/* WHITEBOARD CARD */}
-          <div className='flex flex-col rounded-2xl md:w-72 md:h-96'>
-              <div className=' rounded-3xl'>
-                  <div className="flex flex-col w-full h-full p-3 bg-gray-800 rounded-2xl">
-                    
-                    {/* PIC */}
-                    <div className=" bg-inherit">
-                      <div className="rounded-2xl"> 
-                        <Link href="https://humanize-text.com/">
-                          <Image
-                            className="object-contain lg:min-w-60 lg:min-h-60 border-1 rounded-2xl"
-                            src={whiteboardPic}
-                            alt="pfp picture"
-                            
-                            />
-                        </Link>
-                      </div>
-                      
-                    </div>
-                    {/* Project Title */}
-                    <div className='flex flex-col justify-between bg-inherit'>
-                        <div className="py-2 text-white bg-inherit text-1xl ">
-                          Private Cloud whiteboard
-                        </div>
-                        
-                    </div>
-                  </div>
-              </div>
-              {/* CARD FOOTER */}
-              <div className='flex flex-row justify-between p-2 lg:justify-end rounded-2xl'>
-                  <div className='lg:hidden'>
-                    <Link href="">
-                      <Button size="sm" variant="destructive" className='font-normal text-white rounded-3xl'>No link</Button>
-                    </Link>
-                  </div>
-                  <div className='flex flex-col py-1 space-y-1 bg-inherit rounded-2xl md:flex-row md:space-x-1 md:space-y-0 '>
-                      <Button size="sm"className='bg-blue-600 rounded-3xl w-fit h-fit' >Docker</Button>
-                      <Button size="sm" className='bg-blue-600 rounded-3xl w-fit h-fit' >Kubernetes</Button>
-                      <Button size="sm" className='bg-yellow-600 rounded-3xl w-fit h-fit' >GCP</Button>
-                  </div>
-              </div>
-          </div>
+        {/* HUMANIZE */}
+        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
+          <ProjectCard
+            title="Humanize Text"
+            description="Humanize Text helps you bypass AI text detectors generated."
+            link="https://humanize-text.com/"
+            imageSrc={humanizePic}
+          />
+          <CardFooter
+            link="https://humanize-text.com/"
+            tags={["Nextjs", "Tailwind"]}
+          />
+        </div>
 
+        {/* FINSTIMULATE */}
+        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
+          <ProjectCard
+            title="Finstimulate"
+            description="Stock prediction powered by React, NodeJS, and Flask."
+            link="https://stocks-prediction-app.pages.dev"
+            imageSrc={StocksPic}
+          />
+          <CardFooter
+            link="https://stocks-prediction-app.pages.dev"
+            tags={["React", "NodeJS", "Flask"]}
+            color="orange-400"
+          />
+        </div>
+
+        {/* REFUGEE AID */}
+        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
+          <ProjectCard
+            title="Refugee Aid"
+            description="Aid platform built with Django and React to support refugee needs."
+            link="https://github.com/MabroorA/refugeEAP-app"
+            imageSrc={refugePic}
+          />
+          <CardFooter
+            link="https://github.com/MabroorA/refugeEAP-app"
+            tags={["React", "Django"]}
+          />
+        </div>
+
+        {/* CLOUD WHITEBOARD */}
+        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
+          <ProjectCard
+            title="Private Cloud Whiteboard"
+            description="Self-hosted whiteboard using Docker, GCP & Kubernetes."
+            link=""
+            imageSrc={whiteboardPic}
+          />
+          <CardFooter link="" tags={["Docker", "Kubernetes", "GCP"]} isBroken />
         </div>
       </div>
-  )
-}
+    </div>
+  );
+};
+
+export default ProjectsSection;

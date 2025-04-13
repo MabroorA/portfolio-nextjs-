@@ -1,6 +1,6 @@
-import { PiHandWavingBold } from "react-icons/pi";
 import ProjectsSection from "@/components/projectsSection";
-import BoxReveal from "@/components/magicui/box-reveal";
+import imageEffectpic from "../public/Sound effects main page.png";
+import ProjectCard from "@/components/ProjectCard";
 import Marquee from "@/components/magicui/marquee";
 
 export default function Home() {
@@ -19,35 +19,17 @@ export default function Home() {
         </header>
 
         {/* Main Project Section */}
-        <section className="mb-16">
+        <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-5">Building</h2>
-          {/* <div className="border-l-4 border-teal-500 pl-4"> */}
-          <div className="bg-white p-6 border-gray-400 rounded-md shadow-md shadow-gray-400 ">
-            <a
-              href="https://www.sound-effects-ai.com"
-              className="text-xl font-semibold text-gray-900"
-            >
-              Sound-Effects-Ai.com
-            </a>
-            <p className="mt-2 text-gray-600">
-              A detailed description of the main project you're currently
-              working on. Explain its purpose, challenges, and progress.
-            </p>
-            <div className="mt-4">
-              {/* Placeholder for project image */}
-              <div className="w-full h-48  border border-gray-300 rounded-md">
-                <p className="text-center text-gray-400 mt-20">Project Image</p>
-              </div>
-            </div>
-            <a
-              href="#"
-              className="text-teal-500 hover:text-teal-700 mt-4 inline-block"
-            >
-              Learn more →
-            </a>
+          <div className="max-w-screen-md">
+            <ProjectCard
+              title="Image to Sound Effects"
+              description="AI-Generated Unique Sound Effects. Create instead of extracting from videos."
+              link="https://www.sound-effects-ai.com"
+              imageSrc={imageEffectpic}
+            />
           </div>
-          {/* </div> */}
-        </section>
+        </div>
 
         {/* Lessons Section (Marquee) */}
         <section className="mb-16">
@@ -58,7 +40,7 @@ export default function Home() {
             <div className="space-x-6">
               <ProjectsSection />
             </div>
-          </Marquee>
+          </Marquee>{" "}
         </section>
       </div>
     </main>
