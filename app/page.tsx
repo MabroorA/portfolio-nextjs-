@@ -10,7 +10,7 @@ export default function Home() {
         {/* Header Section */}
         <header className="mb-10">
           <h2 className="mt-2 text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 to-cyan-500">
-            Hey, I'm Mabroor a Full Stack Developer
+            Hey, I am Mabroor a Full Stack Developer
           </h2>
           <p className="mt-4 text-gray-700 text-base">
             I build things sometimes. Welcome to my little corner of the web
