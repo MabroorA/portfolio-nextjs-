@@ -21,11 +21,10 @@ export default function Home() {
               href="https://influence.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo-700 underline hover:text-indigo-900"
+              className="text-indigo-700 underline hover:text-indigo-900 transition-colors duration-200"
             >
               Influence.io
             </a>
-            .
           </p>
         </header>
 

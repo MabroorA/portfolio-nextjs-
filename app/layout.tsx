@@ -21,11 +21,11 @@ export default function RootLayout({
       <body className="relative min-h-screen bg-background">
         <div className="fixed inset-0 -z-10 overflow-hidden min-w-full min-h-screen w-screen h-screen">
           <InteractiveGridPattern
-            className="[mask-image:radial-gradient(800px_circle_at_center,white,transparent)] w-full h-full min-h-screen min-w-full"
-            width={30}
-            height={30}
-            squares={[100, 100]}
-            squaresClassName="transition-colors duration-200 hover:fill-blue-500 fill-blue-200/30"
+            className="[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)] w-full h-full min-h-screen min-w-full opacity-60 cursor-pointer"
+            width={22}
+            height={22}
+            squares={[90, 52]}
+            squaresClassName="stroke-blue-100/50"
           />
         </div>
         <main className="max-w-screen-lg mx-auto">
