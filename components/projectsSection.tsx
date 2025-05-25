@@ -9,6 +9,7 @@ import whiteboardPic from "../public/Cloud-app-home.jpg";
 
 import { Button } from "./ui/button";
 import ProjectCard from "./ProjectCard";
+import Marquee from "./magicui/marquee";
 
 interface CardFooterProps {
   link: string;
@@ -59,78 +60,68 @@ const CardFooter: React.FC<CardFooterProps> = ({
 };
 
 const ProjectsSection: React.FC = () => {
+  // Only render the responsive marquee/stacked cards section
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col py-5 space-y-5 lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-5">
-        {/* IMAGE TO SOUND */}
-        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
-          <ProjectCard
-            title="Image to Sound Effects"
-            description="AI-Generated Unique Sound Effects. Create instead of extracting from videos."
-            link="https://www.sound-effects-ai.com"
-            imageSrc={imageEffectpic}
-          />
-          <CardFooter
-            link="https://sound-affects.vercel.app/"
-            tags={["Nextjs", "Tailwind"]}
-          />
-        </div>
-
-        {/* HUMANIZE */}
-        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
-          <ProjectCard
-            title="Humanize Text"
-            description="Humanize Text helps you bypass AI text detectors generated."
-            link="https://humanize-text.com/"
-            imageSrc={humanizePic}
-          />
-          <CardFooter
-            link="https://humanize-text.com/"
-            tags={["Nextjs", "Tailwind"]}
-          />
-        </div>
-
-        {/* FINSTIMULATE */}
-        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
-          <ProjectCard
-            title="Finstimulate"
-            description="Stock prediction powered by React, NodeJS, and Flask."
-            link="https://stocks-prediction-app.pages.dev"
-            imageSrc={StocksPic}
-          />
-          <CardFooter
-            link="https://stocks-prediction-app.pages.dev"
-            tags={["React", "NodeJS", "Flask"]}
-            color="orange-400"
-          />
-        </div>
-
-        {/* REFUGEE AID */}
-        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
-          <ProjectCard
-            title="Refugee Aid"
-            description="Aid platform built with Django and React to support refugee needs."
-            link="https://github.com/MabroorA/refugeEAP-app"
-            imageSrc={refugePic}
-          />
-          <CardFooter
-            link="https://github.com/MabroorA/refugeEAP-app"
-            tags={["React", "Django"]}
-          />
-        </div>
-
-        {/* CLOUD WHITEBOARD */}
-        <div className="flex flex-col transition-transform duration-300 transform rounded-2xl md:w-72 md:h-96">
-          <ProjectCard
-            title="Private Cloud Whiteboard"
-            description="Self-hosted whiteboard using Docker, GCP & Kubernetes."
-            link=""
-            imageSrc={whiteboardPic}
-          />
-          <CardFooter link="" tags={["Docker", "Kubernetes", "GCP"]} isBroken />
-        </div>
+    <section className="mb-16">
+      {/* Desktop/Tablet: Marquee */}
+      <div className="hidden md:block">
+        <Marquee pauseOnHover>
+          <div className="flex space-x-6">
+            <ProjectCard
+              title="Humanize Text"
+              description="Humanize Text helps you bypass AI text detectors generated."
+              link="https://humanize-text.com/"
+              imageSrc={humanizePic}
+            />
+            <ProjectCard
+              title="Finstimulate"
+              description="Stock prediction powered by React, NodeJS, and Flask."
+              link="https://stocks-prediction-app.pages.dev"
+              imageSrc={StocksPic}
+            />
+            <ProjectCard
+              title="Refugee Aid"
+              description="Aid platform built with Django and React to support refugee needs."
+              link="https://github.com/MabroorA/refugeEAP-app"
+              imageSrc={refugePic}
+            />
+            <ProjectCard
+              title="Private Cloud Whiteboard"
+              description="Self-hosted whiteboard using Docker, GCP & Kubernetes."
+              link=""
+              imageSrc={whiteboardPic}
+            />
+          </div>
+        </Marquee>
       </div>
-    </div>
+      {/* Mobile: Vertical stack */}
+      <div className="flex flex-col space-y-6 md:hidden">
+        <ProjectCard
+          title="Humanize Text"
+          description="Humanize Text helps you bypass AI text detectors generated."
+          link="https://humanize-text.com/"
+          imageSrc={humanizePic}
+        />
+        <ProjectCard
+          title="Finstimulate"
+          description="Stock prediction powered by React, NodeJS, and Flask."
+          link="https://stocks-prediction-app.pages.dev"
+          imageSrc={StocksPic}
+        />
+        <ProjectCard
+          title="Refugee Aid"
+          description="Aid platform built with Django and React to support refugee needs."
+          link="https://github.com/MabroorA/refugeEAP-app"
+          imageSrc={refugePic}
+        />
+        <ProjectCard
+          title="Private Cloud Whiteboard"
+          description="Self-hosted whiteboard using Docker, GCP & Kubernetes."
+          link=""
+          imageSrc={whiteboardPic}
+        />
+      </div>
+    </section>
   );
 };
 

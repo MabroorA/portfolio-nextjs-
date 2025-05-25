@@ -1,7 +1,6 @@
 import ProjectsSection from "@/components/projectsSection";
 import imageEffectpic from "../public/Sound effects main page.png";
 import ProjectCard from "@/components/ProjectCard";
-import Marquee from "@/components/magicui/marquee";
 
 export default function Home() {
   return (
@@ -36,11 +35,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-800 mb-5">
             Learning by Doing (and Breaking)
           </h2>
-          <Marquee pauseOnHover>
-            <div className="space-x-6">
-              <ProjectsSection />
-            </div>
-          </Marquee>{" "}
+          <ProjectsSection />
         </section>
       </div>
     </main>
