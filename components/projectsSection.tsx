@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-import imageEffectpic from "../public/Image-Effects.png";
 import humanizePic from "../public/humanize-updated-home.png";
 import StocksPic from "../public/stocks-updated.jpg";
 import refugePic from "../public/refugeap-home-resized.jpg";
@@ -72,24 +71,28 @@ const ProjectsSection: React.FC = () => {
               description="Humanize Text helps you bypass AI text detectors generated."
               link="https://humanize-text.com/"
               imageSrc={humanizePic}
+              cleanStyle
             />
             <ProjectCard
               title="Finstimulate"
               description="Stock prediction powered by React, NodeJS, and Flask."
               link="https://stocks-prediction-app.pages.dev"
               imageSrc={StocksPic}
+              cleanStyle
             />
             <ProjectCard
               title="Refugee Aid"
               description="Aid platform built with Django and React to support refugee needs."
               link="https://github.com/MabroorA/refugeEAP-app"
               imageSrc={refugePic}
+              cleanStyle
             />
             <ProjectCard
               title="Private Cloud Whiteboard"
               description="Self-hosted whiteboard using Docker, GCP & Kubernetes."
               link=""
               imageSrc={whiteboardPic}
+              cleanStyle
             />
           </div>
         </Marquee>
@@ -101,24 +104,28 @@ const ProjectsSection: React.FC = () => {
           description="Humanize Text helps you bypass AI text detectors generated."
           link="https://humanize-text.com/"
           imageSrc={humanizePic}
+          cleanStyle
         />
         <ProjectCard
           title="Finstimulate"
           description="Stock prediction powered by React, NodeJS, and Flask."
           link="https://stocks-prediction-app.pages.dev"
           imageSrc={StocksPic}
+          cleanStyle
         />
         <ProjectCard
           title="Refugee Aid"
           description="Aid platform built with Django and React to support refugee needs."
           link="https://github.com/MabroorA/refugeEAP-app"
           imageSrc={refugePic}
+          cleanStyle
         />
         <ProjectCard
           title="Private Cloud Whiteboard"
           description="Self-hosted whiteboard using Docker, GCP & Kubernetes."
           link=""
           imageSrc={whiteboardPic}
+          cleanStyle
         />
       </div>
     </section>
