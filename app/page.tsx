@@ -13,7 +13,18 @@ export default function Home() {
           </h2>
           <p className="mt-4 text-gray-700 text-base">
             I build things sometimes. Welcome to my little corner of the web
-            where I share my projects, lessons, and thoughts.
+            where I share my projects and lessons.
+            <br />
+            Currently A Software Engineer at{" "}
+            <a
+              href="https://influence.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-700 underline hover:text-indigo-900"
+            >
+              Influence.io
+            </a>
+            .
           </p>
         </header>
 
