@@ -5,11 +5,15 @@ import React, { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Button } from "./ui/button";
-import { CiMenuBurger } from "react-icons/ci";
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
   const menu = "{Socials}";
+
+  const handleSocialsToggle = () => {
+    setShowMenu((prev) => !prev);
+  };
+
   return (
     <div>
       <nav className="flex flex-col sm:flex-row justify-between mx-auto  text-[#183642] font-bold py-5 md:py-7 px-2 md:px-0  ">
@@ -21,13 +25,20 @@ export default function NavBar() {
               alt="Logo"
             />
           </div>
-          <Button
-            size="sm"
-            className="sm:hidden text-teal-400 bg-slate-900 border-2 border-teal-600 hover:bg-inherit"
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            {menu}
-          </Button>
+          <div>
+            <Button
+              size="sm"
+              className={`sm:hidden border-2 border-teal-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-teal-400 ${
+                showMenu
+                  ? "bg-white text-black ring-2 ring-teal-400 shadow-md" // Toggled: white bg, black text, teal ring, shadow
+                  : "bg-black text-white" // Default: black bg, white text
+              }`}
+              aria-pressed={showMenu}
+              onClick={handleSocialsToggle}
+            >
+              {menu}
+            </Button>
+          </div>
         </div>
         <div
           className={`${
