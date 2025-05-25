@@ -1,6 +1,7 @@
 import ProjectsSection from "@/components/projectsSection";
 import imageEffectpic from "../public/Sound effects main page.png";
 import ProjectCard from "@/components/ProjectCard";
+import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 
 export default function Home() {
   return (
