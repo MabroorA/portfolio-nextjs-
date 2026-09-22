@@ -1,6 +1,7 @@
 import ProjectsSection from "@/components/projectsSection";
-import imageEffectpic from "../public/Sound effects main page.png";
 import ProjectCard from "@/components/ProjectCard";
+import imageEffectPic from "../public/Sound effects main page.png";
+import lessonlyPic from "../public/lessonly-home.png";
 
 export default function Home() {
   return (
@@ -15,14 +16,14 @@ export default function Home() {
             I build things sometimes. Welcome to my little corner of the web
             where I share my projects and lessons.
             <br />
-            Currently A Software Engineer at{" "}
+            Currently a Backend Engineer at{" "}
             <a
-              href="https://influence.io"
+              href="https://manypets.com/uk/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-700 underline hover:text-indigo-900 transition-colors duration-200"
             >
-              Influence.io
+              ManyPets
             </a>
           </p>
         </header>
@@ -30,21 +31,38 @@ export default function Home() {
         {/* Main Project Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-5">Building</h2>
+          <p className="max-w-screen-md mb-6 text-base leading-relaxed text-gray-700">
+            I&apos;m currently building Lessonly.io and taking it from software
+            development through marketing, advertising, and customer
+            acquisition.
+          </p>
           <div className="max-w-screen-md">
             <ProjectCard
-              title="Image to Sound Effects"
-              description="AI-Generated Unique Sound Effects. Create instead of extracting from videos."
-              link="https://www.sound-effects-ai.com"
-              imageSrc={imageEffectpic}
+              title="Lessonly"
+              description="A mobile-first lesson booking platform for driving instructors, with simple scheduling, reminders, and WhatsApp confirmations."
+              link="https://www.lessonly.io/"
+              imageSrc={lessonlyPic}
             />
           </div>
         </div>
 
-        {/* Lessons Section (Marquee) */}
+        {/* Deprecated Project Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-5">
-            Learning by Doing (and Breaking)
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-5">Deprecated</h2>
+          <div className="max-w-screen-md">
+            <ProjectCard
+              title="Sound Effects AI"
+              description="A fun AI sound-effects experiment that made plenty of noise, now taking a well-earned break."
+              link="https://www.sound-effects-ai.com"
+              imageSrc={imageEffectPic}
+              cleanStyle
+            />
+          </div>
+        </section>
+
+        {/* Old Projects Section (Marquee) */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-5">Old Projects</h2>
           <ProjectsSection />
         </section>
       </div>
