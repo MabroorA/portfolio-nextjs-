@@ -48,7 +48,9 @@ export default function Home() {
 
         {/* Deprecated Project Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-5">Deprecated</h2>
+          <h2 className="mb-5 font-mono text-2xl font-semibold italic tracking-tight text-gray-600">
+            Deprecated (I stopped working on this)
+          </h2>
           <div className="max-w-screen-md">
             <ProjectCard
               title="Sound Effects AI"
